@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Equipments</title>
+    <link rel="stylesheet" type="text/css" href="/FrontEnd/global/main.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="logo">
+          <a href="/FrontEnd/index.html"
+            ><img
+              src="/FrontEnd/images/lovepik-fitness-logo-png-image_401759034_wh1200.png"
+              alt="Fitness &amp; Wellness Hub Logo"
+          /></a>
+        </div>
+        <div id="site-title">
+          <h1>Fitness &amp; Wellness Hub</h1>
+          <p>Your Journey to a Healthier Life</p>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <nav class="navbar">
+          <a href="/FrontEnd/index.html" class="logo">FitnessPro</a>
+          <ul class="nav-menu">
+            <li><a href="/FrontEnd/index.html">Home</a></li>
+            <li><a href="/FrontEnd/pages/schedule.html">Schedule</a></li>
+            <li><a href="/FrontEnd/pages/gallery.html">Gallery</a></li>
+            <li><a href="/FrontEnd/pages/video.html">Videos</a></li>
+            <li><a href="/FrontEnd/pages/equipment.html">Equipments</a></li>
+            <li><a href="/FrontEnd/pages/coach.html">Coaches</a></li>
+            <li><a href="/FrontEnd/pages/feedback.html">Feedback</a></li>
+            <li><a href="/FrontEnd/pages/contact.html">Contact</a></li>
+            <li><a href="/FrontEnd/pages/location.html">Location</a></li>
+            <li><a href="/FrontEnd/blog.alqarni.shop">Blog</a></li>
+            <li><a href="/FrontEnd/pages/resume.html">Resume</a></li>
+          </ul>
+          <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </nav>
+      </div>
+
+      <div style="padding: 5px">
+        <h1 style="text-align: center;">Equipment Ratings</h1>
+        <!-- Search Input -->
+        <input type="text" id="searchInput" placeholder="Search equipment..." />
+
+        <!-- Filters -->
+        <select id="brandFilter">
+          <option value="">Select Brand</option>
+          <!-- Dynamic brand options will be added here -->
+        </select>
+        <select id="categoryFilter">
+          <option value="">Select Category</option>
+          <!-- Dynamic category options will be added here -->
+        </select>
+        <select id="muscleFilter">
+          <option value="">Select Target Muscle</option>
+          <!-- Dynamic muscle options will be added here -->
+        </select>
+
+        <!-- Reset Filters Button -->
+        <button id="resetFilters">Reset Filters</button>
+        <br />
+        <br />
+        <!-- Table -->
+        <table id="equipmentTable">
+          <thead>
+            <tr>
+              <th data-column="id">ID</th>
+              <th data-column="name">Name</th>
+              <th data-column="brand">Brand</th>
+              <th data-column="category">Category</th>
+              <th data-column="targetMuscle">Target Muscle</th>
+              <th data-column="description">Description</th>
+            </tr>
+          </thead>
+          <tbody id="equipmentBody">
+            <!-- Data will be populated here dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <footer id="site-footer">
+        <div class="footer-inner">
+          <!-- Footer content -->
+        </div>
+      </footer>
+    </div>
+
+    <script src="/FrontEnd/js/equipment.js"></script>
+  </body>
+</html>

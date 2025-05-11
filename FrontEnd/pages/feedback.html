@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Feedback Form</title>
+    <link rel="stylesheet" href="/FrontEnd/global/Feedback.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="logo">
+          <a href="/FrontEnd/index.html">
+            <img
+              src="/FrontEnd/images/lovepik-fitness-logo-png-image_401759034_wh1200.png"
+              alt="Fitness &amp; Wellness Hub Logo"
+            />
+          </a>
+        </div>
+        <div id="site-title">
+          <h1>Fitness &amp; Wellness Hub</h1>
+          <p>Your Journey to a Healthier Life</p>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <nav class="navbar">
+          <a href="/FrontEnd/index.html" class="logo">FitnessPro</a>
+
+          <ul class="nav-menu">
+            <li><a href="/FrontEnd/index.html">Home</a></li>
+            <li><a href="/FrontEnd/pages/schedule.html">Schedule</a></li>
+            <li><a href="/FrontEnd/pages/gallery.html">Gallery</a></li>
+            <li><a href="/FrontEnd/pages/video.html">Videos</a></li>
+            <li><a href="/FrontEnd/pages/equipment.html">Equipments</a></li>
+            <li><a href="/FrontEnd/pages/coach.html">Coaches</a></li>
+            <li><a href="/FrontEnd/pages/feedback.html">Feedback</a></li>
+            <li><a href="/FrontEnd/pages/contact.html">Contact</a></li>
+            <li><a href="/FrontEnd/pages/location.html">Location</a></li>
+            <li><a href="blog.alqarni.shop">Blog</a></li>
+            <li><a href="/FrontEnd/pages/resume.html">Resume</a></li>
+            <!-- <li class="member-link"><a href="/FrontEnd/pages/member-portal.php">Member Portal</a></li> -->
+          </ul>
+
+          <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </nav>
+      </div>
+      <div class="container">
+        <h1 class="header">GYM FEEDBACK FORM</h1>
+        <form id="gymFeedbackForm" action="" method="POST">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group">
+              <label for="firstName" class="required">First Name</label>
+              <input type="text" id="firstName" name="firstName" />
+              <span id="firstNameError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="lastName" class="required">Last Name</label>
+              <input type="text" id="lastName" name="lastName" />
+              <span id="lastNameError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="required">Email</label>
+              <input type="email" id="email" name="email" />
+              <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="required">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+              <span id="phoneError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="text" id="age" name="age" />
+              <span id="ageError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gender" value="male" /> Male
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="female" /> Female
+                </label>
+              </div>
+              <span id="genderError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="membershipId">Membership ID</label>
+              <input type="text" id="membershipId" name="membershipId" />
+              <span id="membershipIdError" class="error"></span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Fitness Goals</legend>
+            <div class="form-group">
+              <label>What are your fitness goals? (Check all that apply)</label>
+              <div class="checkbox-group checkbox-columns">
+                <label>
+                  <input type="checkbox" name="goals" value="weight-loss" />
+                  Weight Loss
+                </label>
+                <label>
+                  <input type="checkbox" name="goals" value="muscle-gain" />
+                  Muscle Gain
+                </label>
+                <label>
+                  <input type="checkbox" name="goals" value="flexibility" />
+                  Improve Flexibility
+                </label>
+                <label>
+                  <input type="checkbox" name="goals" value="endurance" />
+                  Increase Endurance
+                </label>
+                <label>
+                  <input type="checkbox" name="goals" value="health" /> Overall
+                  Health
+                </label>
+                <label>
+                  <input type="checkbox" name="goals" value="strength" /> Build
+                  Strength
+                </label>
+              </div>
+              <span id="goalsError" class="error"></span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Feedback Details</legend>
+            <div class="form-group">
+              <label for="city">City</label>
+              <select id="city" name="city">
+                <option value="">-- Select City --</option>
+                <option value="new york">New York</option>
+                <option value="los angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="houston">Houston</option>
+                <option value="phoenix">Phoenix</option>
+                <option value="philadelphia">Philadelphia</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="cityError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="preferredLocation">Preferred Gym Location</label>
+              <input
+                type="text"
+                id="preferredLocation"
+                name="preferredLocation"
+              />
+              <span id="preferredLocationError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Which services have you used?</label>
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" name="services" value="weights" />
+                  Weight Training
+                </label>
+                <label>
+                  <input type="checkbox" name="services" value="cardio" />
+                  Cardio
+                </label>
+                <label>
+                  <input type="checkbox" name="services" value="classes" />
+                  Group Classes
+                </label>
+                <label>
+                  <input type="checkbox" name="services" value="personal" />
+                  Personal Training
+                </label>
+              </div>
+              <span id="servicesError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Which facilities do you use? (Check all that apply)</label>
+              <div class="checkbox-group checkbox-columns">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="facilities"
+                    value="locker-room"
+                  />
+                  Locker Room
+                </label>
+                <label>
+                  <input type="checkbox" name="facilities" value="sauna" />
+                  Sauna
+                </label>
+                <label>
+                  <input type="checkbox" name="facilities" value="pool" />
+                  Swimming Pool
+                </label>
+                <label>
+                  <input type="checkbox" name="facilities" value="shower" />
+                  Shower Facilities
+                </label>
+                <label>
+                  <input type="checkbox" name="facilities" value="parking" />
+                  Parking
+                </label>
+                <label>
+                  <input type="checkbox" name="facilities" value="wifi" /> WiFi
+                </label>
+              </div>
+              <span id="facilitiesError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label>How did you hear about us?</label>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="referral" value="social" /> Social
+                  Media
+                </label>
+                <label>
+                  <input type="radio" name="referral" value="friend" /> Friend
+                </label>
+                <label>
+                  <input type="radio" name="referral" value="ad" />
+                  Advertisement
+                </label>
+                <label>
+                  <input type="radio" name="referral" value="other" /> Other
+                </label>
+              </div>
+              <span id="referralError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Please select the days you typically visit our gym:</label>
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" name="visitDays" value="monday" />
+                  Monday
+                </label>
+                <label>
+                  <input type="checkbox" name="visitDays" value="tuesday" />
+                  Tuesday
+                </label>
+                <label>
+                  <input type="checkbox" name="visitDays" value="wednesday" />
+                  Wednesday
+                </label>
+                <label>
+                  <input type="checkbox" name="visitDays" value="thursday" />
+                  Thursday
+                </label>
+                <label>
+                  <input type="checkbox" name="visitDays" value="friday" />
+                  Friday
+                </label>
+                <label>
+                  <input type="checkbox" name="visitDays" value="saturday" />
+                  Saturday
+                </label>
+                <label>
+                  <input type="checkbox" name="visitDays" value="sunday" />
+                  Sunday
+                </label>
+              </div>
+              <span id="visitDaysError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="feedback" class="required">Your Feedback</label>
+              <textarea id="feedback" name="feedback"></textarea>
+              <span id="feedbackError" class="error"></span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+      </div>
+      <footer id="site-footer">
+        <div class="footer-inner">
+          <div class="footer-widgets">
+            <section
+              class="widget contact-widget"
+              aria-labelledby="footer-contact-title"
+            >
+              <h2 id="footer-contact-title">Contact Us</h2>
+              <address>
+                123 Fitness St.<br />
+                Wellness City, 98765<br />
+                <a href="tel:+1234567890">+1 (234) 567-890</a><br />
+                <a href="mailto:info@fitnesshub.com">info@fitnesshub.com</a>
+              </address>
+            </section>
+
+            <section
+              class="widget quick-links"
+              aria-labelledby="footer-links-title"
+            >
+              <h2 id="footer-links-title">Quick Links</h2>
+              <ul>
+                <li><a href="/FrontEnd/index.php">Home</a></li>
+                <li><a href="/FrontEnd/pages/schedule.php">Schedule</a></li>
+                <li><a href="/FrontEnd/pages/gallery.php">Gallery</a></li>
+                <li><a href="/FrontEnd/pages/video.php">Videos</a></li>
+                <li><a href="/FrontEnd/pages/equipment.php">Equipment</a></li>
+                <li><a href="/FrontEnd/pages/coach.php">Coaches</a></li>
+                <li><a href="/FrontEnd/pages/feedback.php">Feedback</a></li>
+                <li><a href="/FrontEnd/pages/contact.php">Contact</a></li>
+                <li><a href="/FrontEnd/pages/location.php">Location</a></li>
+                <li>
+                  <a
+                    href="http://blog.yourdomainname.com"
+                    target="_blank"
+                    rel="noopener"
+                    >Blog</a
+                  >
+                </li>
+                <li><a href="/FrontEnd/pages/resume.php">Resume</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="footer-credits">
+            <p>
+              &copy;
+              <?php echo date('Y'); ?>
+              Fitness &amp; Wellness Hub. All rights reserved.
+            </p>
+            <p class="validation-icons">
+              <a
+                href="https://validator.w3.org/check?uri=referer"
+                aria-label="Valid XHTML 1.0 Strict"
+              >
+                <img
+                  src="https://www.w3.org/Icons/valid-xhtml10"
+                  alt="Valid XHTML 1.0 Strict"
+                />
+              </a>
+              <a
+                href="https://jigsaw.w3.org/css-validator/check/referer"
+                aria-label="Valid CSS"
+              >
+                <img
+                  src="https://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="Valid CSS!"
+                />
+              </a>
+            </p>
+            <p><a href="#top" class="back-to-top">Back to Top ↑</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/js/validation.js"></script>
+  </body>
+</html>
